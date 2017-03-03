@@ -22,6 +22,8 @@ scalacOptions ++= Seq(
   "-Xfuture"
 )
 
+credentials += Credentials(Path.userHome / ".sbt" / "credentials")
+
 resolvers ++= Seq(
   "Curalate snapshots" at "https://maven.curalate.com/content/repositories/snapshots/",
   "Curalate releases" at "https://maven.curalate.com/content/repositories/releases/"
